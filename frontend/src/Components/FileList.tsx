@@ -61,8 +61,10 @@ const FileList =({onSuccess}:{onSuccess:boolean})=>{
     </div>
 
     
-      <AiOutlineEye  onClick={()=>handleViewFile(file.Key)} title="View File" className="w-full rounded-md h-5 w-5 cursor-pointer  text-sm font-medium text-black transition  sm:w-auto"/>
-      <BiTrash className="text-red-500 hover:text-red-700" onClick={()=>handleDeleteFile(file.Key)} title="Delete File"/>
+     <div className="flex gap-2">
+       <AiOutlineEye  onClick={()=>handleViewFile(file.Key)} title="View File" className="w-full rounded-md h-5 w-5 cursor-pointer  text-sm font-medium text-blue-500 transition  sm:w-auto"/>
+      <BiTrash className="text-red-500 hover:text-red-700 cursor-pointer" onClick={()=>handleDeleteFile(file.Key)} title="Delete File"/>
+      </div>
   </div>
 ))}
 </div>
